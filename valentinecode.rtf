@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <canvas id="confettiCanvas"></canvas>\
+\
+  <main class="card">\
+    <!-- ORIGINAL CUTE ANIMAL WITH HEART -->\
+    <!-- ANIMAL WITH HEART -->\
+    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">\
+      <defs>\
+        <linearGradient id="fur" x1="0" x2="1">\
+@@ -178,7 +178,7 @@ <h1>Sambhavi will you be my valentine?</h1>\
+      <button id="noBtn">No</button>\
+    </section>\
+\
+    <!-- HINT (ONLY FIRST SECTION) -->\
+    <!-- HINT -->\
+    <div class="hint" id="hint">\'93No\'94 seems a bit shy \uc0\u55357 \u56840 </div>\
+\
+    <section class="result" id="result">\
+@@ -198,7 +198,7 @@ <h2>YAY! \uc0\u55356 \u57225 </h2>\
+    const result = document.getElementById("result");\
+    const hint = document.getElementById("hint");\
+\
+    /* ---------- CONFETTI (FIXED FULL SCREEN) ---------- */\
+    /* ---------- CONFETTI ---------- */\
+    const confettiCanvas = document.getElementById("confettiCanvas");\
+\
+    function resizeConfettiCanvas() \{\
+@@ -292,7 +292,7 @@ <h2>YAY! \uc0\u55356 \u57225 </h2>\
+    /* ---------- YES CLICK ---------- */\
+    yesBtn.addEventListener("click", () => \{\
+      zone.style.display = "none";\
+      hint.style.display = "none";     // \uc0\u9989  HIDE THE HINT\
+      hint.style.display = "none";     // HIDE THE HINT\
+      result.style.display = "block";\
+      resizeConfettiCanvas();\
+      fullScreenConfetti();\
+@@ -302,3 +302,4 @@ <h2>YAY! \uc0\u55356 \u57225 </h2>\
+</html>\
+}
